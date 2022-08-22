@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    
+    <title>LISTA DE AMIGACHOS</title>
+</head>
+<body>
+    {% for persona in personas %}
+    <h1>Nombre y Apellido: {{persona.nombre}}{{" "}} {{persona.apellido}}</h1>
+    <p>edad: {{persona.edad}}</p>
+    <p>sexo: {{persona.sexo}}</p>    
+    
+    {% endfor %}
+    <br>
+    <br>
+    {% for persona in persona1 %}
+    <h1>Nombre y Apellido: {{persona.nombre}}{{" "}} {{persona.apellido}}</h1>
+    <p>edad: {{persona.edad}}</p>
+    <p>sexo: {{persona.sexo}}</p>    
+    
+    {% endfor %}
+    <br>
+    <br>
+    {% for persona in persona2 %}
+    <h1>Nombre y Apellido: {{persona.nombre}}{{" "}} {{persona.apellido}}</h1>
+    <p>edad: {{persona.edad}}</p>
+    <p>sexo: {{persona.sexo}}</p>    
+    
+    {% endfor %}
+    <br>
+    <br>
+    {% for persona in persona3 %}
+    <h1>Nombre y Apellido: {{persona.nombre}}{{" "}} {{persona.apellido}}</h1>
+    <p>edad: {{persona.edad}}</p>
+    <p>sexo: {{persona.sexo}}</p>    
+    
+    {% endfor %}
+
+</body>
+</html>
